@@ -1,0 +1,19 @@
+.wow {
+  width: 100px;
+}
+
+.wrapper{
+   
+  display: grid;
+  grid-template-rows: repeat(3,20vh);
+  grid-template-areas: "h b b b"
+                        "h b b b"
+                        "h f f f";
+  gap:10px;
+}
+.column1{ grid-area:h;
+        background-color: green;}
+.column2{ grid-area:b;
+        background-color: blueviolet;}
+.column3{ grid-area:f;
+        background-color: indianred;}
