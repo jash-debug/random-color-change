@@ -1,9 +1,10 @@
 let x=document.querySelector(".column1");
 
-function y(){
-  return Math.floor(Math.Random * 255);
+let y= ()=>{
+  let z=Math.floor(Math.random() * 256);
+  return z;
 }
-
-x.onclick = function(){
-  x.style.backgroundColor = 'rgb('+ y() +','+ y()+','y() ')';
+console.log(y());
+x.onclick = ()=>{
+  x.style.backgroundColor = `rgb(${y()},${y()},${y()})`;
 }
