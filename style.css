@@ -11,9 +11,35 @@
                         "h a a a";
   gap:10px;
 }
+
+nav {
+  position: fixed;
+  width: fixed;
+  z-index: 5;
+  left: -5.8em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  background-color: blue;
+  font-family: "Proza Libre", serif;
+  font-size: 18px;
+  line-height: 2.2;
+  font-weight: bold;
+  color: #142033;
+  transition: left 1s ease-in 200ms;
+  animation:  bounceIn 2s ease-in-out 3s;
+
+}
+nav:hover{
+  left: 0em;
+}
+
 .column1{ grid-area:h;
         background-color: green;
-        transition: background-color 500ms ease-in 200ms;}
+        transition: background-color 500ms ease-in 200ms;
+        ;}
 .column2{ grid-area:b;
         background-color: blueviolet;}
 .column3{ grid-area:a;
